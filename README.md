@@ -48,7 +48,7 @@ The details in this guide have been very heavily inspired by several existing st
 <a name="tabs_or_spaces"/>
 ### Tabs or Spaces?
 
-Use **spaces only**, with **2 spaces** per indentation level. Never mix tabs and spaces.
+Use **spaces only**, with **4 spaces** per indentation level. Never mix tabs and spaces.
 
 <a name="maximum_line_length"/>
 ### Maximum Line Length
@@ -237,10 +237,10 @@ In cases where method calls are being chained and the code does not fit on a sin
 
 ```coffeescript
 [1..3]
-  .map((x) -> x * x)
-  .concat([10..12])
-  .filter((x) -> x < 11)
-  .reduce((x, y) -> x + y)
+    .map((x) -> x * x)
+    .concat([10..12])
+    .filter((x) -> x < 11)
+    .reduce((x, y) -> x + y)
 ```
 
 When calling functions, choose to omit or include parentheses in such a way that optimizes for readability. Keeping in mind that "readability" can be subjective, the following examples demonstrate cases where parentheses have been omitted or included in a manner that the community deems to be optimal:
@@ -306,15 +306,15 @@ Instead of using `unless...else`, use `if...else`:
 ```coffeescript
   # Yes
   if true
-    ...
+      ...
   else
-    ...
+      ...
 
   # No
   unless false
-    ...
+      ...
   else
-    ...
+      ...
 ```
 
 Multi-line if/else clauses should use indentation:
@@ -322,9 +322,9 @@ Multi-line if/else clauses should use indentation:
 ```coffeescript
   # Yes
   if true
-    ...
+      ...
   else
-    ...
+      ...
 
   # No
   if true then ...
@@ -343,7 +343,7 @@ Take advantage of comprehensions whenever possible:
   # No
   results = []
   for item in array
-    results.push item.name
+      results.push item.name
 ```
 
 To filter:
